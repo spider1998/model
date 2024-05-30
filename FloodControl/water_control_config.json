@@ -1,0 +1,218 @@
+{
+    "db": {
+        "description": "Server configuration",
+        "values": {
+            "address": "175.24.230.156",
+            "port": 3306,
+            "user": "teamwork_forecast",
+            "password": "xbsd@2022",
+            "database": "nwh_forecast",
+            "database_monitor": "nwh_monitor"
+        },
+        "in": {
+            "description": "Table of input data",
+            "values": {
+                "zv": "st_zvarl_b",
+                "zv_version": "st_zvarl_type",
+                "rdfh": "reservoir_flood",
+                "realtime": "forecast",
+                "supply": "dispatch_water_supply",
+                "reservoir_info": "st_reservoir_information"
+            }
+        },
+        "out": {
+            "description": "Table of output data",
+            "values": {
+                "static": "reservoir_flood_output",
+                "dynamic": "ST_REGLAT_F"
+            }
+        }
+    },
+    "sqlite": {
+        "description": "SQLite configuration",
+        "path": {
+            "values": "X:\\Datasets\\TYUT\\dongda-projects\\data\\db\\dongda.db"
+        },
+        "in": {
+            "description": "Table of input data",
+            "values": {
+                "zv": "reservoir_zv",
+                "rdfh": "reservoir_flood",
+                "realtime": "forecast"
+            }
+        },
+        "out": {
+            "description": "Table of output data",
+            "values": "reservoir_flood_output"
+        }
+    },
+    "setting": {
+        "dongpu": {
+            "description": "configure of dongpu reservoir",
+            "values": {
+                "z": 28,
+                "v": 0.77,
+                "q": 79,
+                "max_out_culvert": 61
+            }
+        },
+        "dafangying": {
+            "description": "configure of dafangying reservoir",
+            "values": {
+                "z": 27.5,
+                "v": 0.5477,
+                "q": 94,
+                "max_out_culvert": 83
+            }
+        },
+        "dongpu_minor": {
+            "description": "configure minor flood of dongpu reservoir",
+            "values": {
+                "z": 26,
+                "v": 0.77,
+                "out_for_minor_flood": 0,
+                "water_level_for_minor_flood": 27.9,
+                "max_out_culvert": 61
+            }
+        },
+        "dafangying_minor": {
+            "description": "configure minor flood  of dafangying reservoir",
+            "values": {
+                "z": 26,
+                "v": 0.5477,
+                "out_for_minor_flood": 0,
+                "water_level_for_minor_flood": 27.4,
+                "max_out_culvert": 83
+            }
+        },
+        "QZ_table": {
+            "description": "configure of QZ table",
+            "values": {
+                "dafangying": {
+                    "Z": [
+                        17.00,
+                        18.00,
+                        19.00,
+                        20.00,
+                        21.00,
+                        22.00,
+                        23.00,
+                        24.00,
+                        25.00,
+                        26.00,
+                        27.00,
+                        27.50,
+                        28.00,
+                        28.50,
+                        29.00,
+                        29.50,
+                        30.00,
+                        30.50,
+                        31.00,
+                        32.00,
+                        33.00,
+                        33.60,
+                        33.64,
+                        34.00
+                    ],
+                    "Q": [
+                        0,
+                        2,
+                        8,
+                        17,
+                        29,
+                        38,
+                        46,
+                        52,
+                        58,
+                        63,
+                        76,
+                        94,
+                        117,
+                        144,
+                        209,
+                        306,
+                        440,
+                        600,
+                        777,
+                        1147,
+                        1595,
+                        1908,
+                        1918,
+                        2099
+                    ]
+                },
+                "dongpu": {
+                    "Z": [
+                        23.50,
+                        24.00,
+                        24.50,
+                        25.00,
+                        25.50,
+                        25.70,
+                        26.00,
+                        26.50,
+                        26.60,
+                        27.00,
+                        27.50,
+                        28.00,
+                        28.50,
+                        29.00,
+                        29.50,
+                        29.85,
+                        30.00,
+                        30.50,
+                        30.60,
+                        31.00,
+                        31.40,
+                        31.50,
+                        32.00,
+                        32.10,
+                        32.50,
+                        33.00,
+                        33.50,
+                        34.00,
+                        34.30,
+                        34.47,
+                        34.50,
+                        35.00
+                    ],
+                    "Q": [
+                        31,
+                        34,
+                        37,
+                        40,
+                        42,
+                        43,
+                        43,
+                        48,
+                        50,
+                        60,
+                        70,
+                        79,
+                        90,
+                        100,
+                        110,
+                        116,
+                        120,
+                        130,
+                        156,
+                        217,
+                        292,
+                        311,
+                        352,
+                        396,
+                        573,
+                        832,
+                        1122,
+                        1432,
+                        1571,
+                        1650,
+                        1744,
+                        2071
+                    ]
+                }
+            }
+        }
+    }
+}

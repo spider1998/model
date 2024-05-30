@@ -1,0 +1,35 @@
+{
+    "db": {
+        "description": "Server configuration",
+        "values": {
+            "address": "175.24.230.156",
+            "port": 3306,
+            "user": "teamwork_forecast",
+            "password": "xbsd@2022",
+            "database": "nwh_forecast"
+        },
+        "in": {
+            "description": "Table of input data",
+            "values": "yearly"
+        },
+        "out": {
+            "description": "Table of output data",
+            "values": "yearly_output"
+        }
+    },
+
+    "sqlite": {
+        "description": "SQLite configuration",
+        "values": {
+            "path": "./data/db/dongda.db"
+        },
+        "in": {
+            "description": "Table of input data",
+            "values": "yearly"
+        },
+        "out": {
+            "description": "Table of output data",
+            "values": "yearly_output"
+        }
+    }
+}

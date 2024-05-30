@@ -1,0 +1,129 @@
+{
+    "db": {
+        "description": "Server configuration",
+        "values": {
+            "address": "175.24.230.156",
+            "port": 3306,
+            "user": "teamwork_forecast",
+            "password": "xbsd@2022",
+            "database": "nwh_forecast"
+        },
+        "in": {
+            "description": "Table of input data",
+            "values": {}
+        },
+        "out": {
+            "description": "Table of output data",
+            "values": "joint_supply_water_output"
+        }
+    },
+    "sqlite": {
+        "description": "SQLite configuration",
+        "path": {
+            "values": "X:\\Datasets\\TYUT\\dongda-projects\\data\\db\\dongda.db"
+        },
+        "in": {
+            "description": "Table of input data",
+            "values": {
+                "rainfall": "rainfall",
+                "evaporation": "evaporation",
+                "inflow": "inflow"
+            }
+        },
+        "out": {
+            "description": "Table of output data",
+            "values": "forecast"
+        }
+    },
+    "setting": {
+        "description": "Setting of supply water",
+        "values": {
+            "dfy_a": -9.086e-24,
+            "dfy_b": 5.836e-19,
+            "dfy_c": -1.469e-14,
+            "dfy_d": 1.846e-10,
+            "dfy_e": -1.24e-06,
+            "dfy_f": 0.004987,
+            "dfy_g": 17.474,
+            "dp_a": -0.00000000000000000000000398,
+            "dp_b": 0.00000000000000000029942896,
+            "dp_c": -0.00000000000000878108390664,
+            "dp_d": 0.00000000012712167699542700,
+            "dp_e": -0.00000096228827387512100000,
+            "dp_f": 0.00422947438636661000000000,
+            "dp_g": 18.05393261292490000000000000,
+            "dfy_aa": -0.0001837130,
+            "dfy_bb": 0.0025325647,
+            "dfy_cc": 1.3718662584,
+            "dfy_dd": -91.0101476634,
+            "dfy_ee": 2445.6304916712,
+            "dfy_ff": -30760.9953554777,
+            "dfy_gg": 149723.0340949450,
+            "dp_aa": -0.1777,
+            "dp_bb": 20.295,
+            "dp_cc": -749.11,
+            "dp_dd": 11532,
+            "dp_ee": -64469,
+            "Zxunxian_dfy": [
+                28,
+                28,
+                28,
+                28,
+                28,
+                27.5,
+                27.5,
+                27.5,
+                27.5,
+                28,
+                28,
+                28
+            ],
+            "Vxunxian_dfy": [
+                6500,
+                6500,
+                6500,
+                6500,
+                6500,
+                5850,
+                5851,
+                5852,
+                6500,
+                6500,
+                6500,
+                6500
+            ],
+            "Zxunxian_dp": [
+                29,
+                29,
+                29,
+                29,
+                29,
+                28,
+                28,
+                28,
+                28,
+                29,
+                29,
+                29
+            ],
+            "Vxunxian_dp": [
+                9230.58,
+                9230.58,
+                9230.58,
+                9230.58,
+                9230.58,
+                7392.78,
+                7392.78,
+                7392.78,
+                7392.78,
+                9230.58,
+                9230.58,
+                9230.58
+            ],
+            "Zsishui_dfy": 18,
+            "Vsishui_dfy": 186.1,
+            "Zsishui_dp": 18.5,
+            "Vsishui_dp": 166.09
+        }
+    }
+}

@@ -1,0 +1,58 @@
+{
+    "db": {
+        "description": "Server configuration",
+        "values": {
+            "address": "175.24.230.156",
+            "port": 3306,
+            "user": "teamwork_forecast",
+            "password": "xbsd@2022",
+            "database": "nwh_forecast"
+        },
+        "in": {
+            "description": "Table of input data",
+            "values": "monthly"
+        },
+        "out": {
+            "description": "Table of output data",
+            "values": "monthly_output"
+        }
+    },
+
+    "sqlite": {
+        "description": "SQLite configuration",
+        "values": {
+            "path": "./data/db/dongda.db"
+        },
+        "in": {
+            "description": "Table of input data",
+            "values": "monthly"
+        },
+        "out": {
+            "description": "Table of output data",
+            "values": "monthly_output"
+        }
+    },
+
+    "VMD_APSO_LSTM": {
+        "0": {
+            "weight": {
+                "values": {
+                    
+                }
+            },
+            "path": {
+                "values": "./model/longtime/month/0"
+            }
+        },
+        "1": {
+            "weight": {
+                "values": {
+                    
+                }
+            },
+            "path": {
+                "values": "./model/longtime/month/1"
+            }
+        }
+    }
+}
